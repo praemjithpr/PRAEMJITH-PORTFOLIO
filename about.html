@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PRAEMJITH Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for About page specific styles */
+        .about-hero {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .education-card, .interest-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .education-card:hover, .interest-card:hover {
+            transform: translateY(-5px);
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #667eea;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -23px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Praemjith</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>Get to know the person behind the code</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+    <h2>My Story</h2>
+    <p>
+        Hello! I'm Praemjith, a passionate tech enthusiast with a strong interest in drones, robotics, AI, and software development. My journey began with hands-on projects in the Aviation and Robotics Club, where I built autonomous aerial systems and IoT-driven solutions. Over time, I expanded into web and mobile app development, blending creativity with problem-solving to craft impactful digital experiences.
+    </p>
+    <p>
+        I believe in creating solutions that are functional, reliable, and user-friendly. From developing an AI-powered hexacopter for rescue operations to building a multilingual chatbot ticketing system and event management platforms, I approach each project with dedication and attention to detail. Hackathons and competitions fuel my drive to innovate and keep learning.
+    </p>
+    <p>
+        My mindset of “living in beta mode” keeps me constantly exploring new technologies, improving my skills, and adapting to challenges. I enjoy collaborating with passionate teams, sharing knowledge, and pushing the boundaries of what’s possible in both hardware and software development.
+    </p>
+</div>
+
+                    <div class="about-image">
+                        <img src="images/A2.jpg" alt="John working" style="width: 100%; border-radius: 10px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education-section">
+            <div class="container">
+                <h2>Education</h2>
+               <div class="timeline">
+    <div class="timeline-item">
+        <div class="education-card">
+            <h3>B.Tech in Artificial Intelligence and Data Science</h3>
+            <p class="institution">KPR Institute of Engineering and Technology, Coimbatore</p>
+            <p class="year">2023 - Present</p>
+            <p>Currently in 3rd year with a CGPA of 8.4. Actively involved in projects, hackathons, and research in AI, IoT, and UAV systems.</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="education-card">
+            <h3>Higher Secondary Education (Class 12)</h3>
+            <p class="institution">Raja Matric Hr. Sec. School, Rameshwaram</p>
+            <p class="year">2022</p>
+            <p>Completed Class 12 with strong academic performance, focusing on science and mathematics to build a foundation for engineering studies.</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="education-card">
+            <h3>Secondary Education (Class 10)</h3>
+            <p class="institution">Raja Matric Hr. Sec. School, Rameshwaram</p>
+            <p class="year">2020</p>
+            <p>Achieved excellent results in Class 10, developing an early interest in technology, robotics, and innovation.</p>
+        </div>
+    </div>
+</div>
+
+        </section>
+<section class="interests-section">
+    <div class="container">
+        <h2>Interests & Hobbies</h2>
+        <div class="interests-grid">
+            <div class="interest-card">
+                <h3>✈ Aviation & Robotics</h3>
+                <p>I love building drones, RC planes, and autonomous aerial systems, combining engineering, electronics, and AI-based navigation. Experimenting with flight mechanics and mission-based UAV designs excites me the most.</p>
+            </div>
+            <div class="interest-card">
+                <h3>🏆 Hackathons & Competitions</h3>
+                <p>Actively participating and winning in hackathons focused on AI, IoT, and UAVs. These events challenge my creativity, problem-solving skills, and ability to work under pressure as part of a team.</p>
+            </div>
+            <div class="interest-card">
+                <h3>💻 Software Development</h3>
+                <p>Passionate about building web, mobile, and IoT-integrated applications. I enjoy turning ideas into functional software solutions with clean, maintainable code and efficient architecture.</p>
+            </div>
+            <div class="interest-card">
+                <h3>🎨 UI/UX Design</h3>
+                <p>Using tools like Figma, I design modern, user-friendly interfaces that balance aesthetics with functionality. My goal is to create experiences that feel smooth and engaging for users.</p>
+            </div>
+            <div class="interest-card">
+                <h3>🔬 Tech Exploration</h3>
+                <p>I’m always exploring new tools, frameworks, and emerging technologies. Staying ahead of trends helps me bring fresh ideas into my projects and adapt to the fast-paced tech world.</p>
+            </div>
+            <div class="interest-card">
+                <h3>🌱 Personal Growth</h3>
+                <p>I live by the mindset of “living in beta mode,” constantly learning, adapting, and improving myself. Personal development and a positive attitude are key to my approach in life and work.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Praemjith. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/praemjith" class="social-link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/praemjithpr" class="social-link" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/praem_jith" class="social-link" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

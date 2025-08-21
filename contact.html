@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - PRAEMJITH Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for Projects page specific styles */
+        .projects-hero {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .project-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 30px;
+        }
+        .project-title {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+        .project-link {
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .project-link.primary {
+            background: #667eea;
+            color: white;
+        }
+        .project-link.secondary {
+            border: 2px solid #667eea;
+            color: #667eea;
+        }
+        .project-link:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Praemjith</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link active">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p>A showcase of my recent work and creative solutions</p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="/./images/WhatsApp_Image_2025-04-04_at_06.16.05_602ce2b4.jpg" alt="E-Commerce Platform" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">AI based Hexacopter</h3>
+                            <p class="project-description">
+                                The AI Hexacopter is an advanced autonomous drone built for search and rescue missions, equipped with human detection, payload delivery, and real-time communication. It uses a Raspberry Pi with Camera V2 and a thermal camera for vision processing, while ArduPilot controls autonomous navigation through GPS waypoints. LoRa modules enable long-range communication with the ground control station, transmitting location data after detections. The system integrates obstacle avoidance, night vision, and an FPV camera for live coverage, along with a disaster prediction app powered by IoT sensors.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Raspberry Pi</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Weather API</span>
+                                <span class="tech-tag">Mission Planner</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link primary">Live Demo</a>
+                                <a href="#" class="project-link secondary">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="./images/Screenshot_2025-08-14_105914.png" alt="Task Management App" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Event Management Website </h3>
+                            <p class="project-description">
+                                The Event Management Website is a platform designed to simplify event planning, registration, and ticketing for users and organizers. It allows event creators to list events, manage bookings, process payments, and track attendee data, while users can browse events, register, and receive updates.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">express.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link primary">Live Demo</a>
+                                <a href="#" class="project-link secondary">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="./images/Screenshot_2025-07-15_192522.png" alt="Weather Forecast App" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">NoVa FACADE Website</h3>
+                            <p class="project-description">
+                             A facade website acts as the front-facing layer of a system, presenting information and features to users while hiding the complex backend processes.
+It focuses on clean design, intuitive navigation, and user-friendly interaction.
+The site serves as a gateway, guiding visitors to services, products, or deeper functionalities.
+Its main goal is to provide a seamless, appealing first impression while maintaining efficiency and accessibility.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Google Translate API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link primary">Live Demo</a>
+                                <a href="#" class="project-link secondary">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="./images/Screenshot_2025-08-14_110840.png" alt="Portfolio Website" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">
+                                A modern, responsive portfolio website showcasing my skills and projects. 
+                                Built with performance optimization, SEO best practices, and accessibility 
+                                in mind. Features smooth animations, contact forms, and a blog section 
+                                for sharing development insights.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Google Forms</span>
+                                <span class="tech-tag">Netlify</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link primary" style="background: #fa709a;">Live Demo</a>
+                                <a href="#" class="project-link secondary" style="border-color: #fa709a; color: #fa709a;">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Praemjith. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/praemjith" class="social-link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/praemjithpr" class="social-link" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/praem_jith" class="social-link" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

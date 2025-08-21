@@ -1,0 +1,139 @@
+# index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praemjith - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for Home page specific styles */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 30px;
+            object-fit: cover;
+        }
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .cta-button {
+            background: white;
+            color: #764ba2;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: #f1f1f1;
+        }
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        .button-group a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Praemjith</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <img src="images/knio.jpg" alt="Praemjith Profile" class="profile-image">
+            <h1 class="hero-title">PRAEMJITH P R</h1>
+            <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
+            <p class="hero-description">
+                Passionate about creating beautiful, functional web experiences that solve real-world problems. 
+                Welcome to my digital portfolio where creativity meets technology. 
+                I strive to design solutions that are both visually engaging and highly efficient. 
+                Every project I work on is driven by innovation and a desire to make a meaningful impact. 
+                Let’s turn ideas into powerful, user-friendly digital realities.
+            </p>
+            <div class="button-group">
+                <a href="projects.html" class="cta-button">View My Work</a>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="container">
+                <h2>Welcome to My Portfolio</h2>
+                <p>
+                    I'm a dedicated developer with a passion for creating innovative solutions. 
+                    With expertise in modern web technologies and a keen eye for design, 
+                    I bring ideas to life through clean, efficient code and intuitive user experiences.
+                </p>
+                <div class="skills-preview">
+                    <div class="skill-item">
+                        <h3>Frontend Development</h3>
+                        <p>HTML5, CSS3, JavaScript, React</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Backend Development</h3>
+                        <p>Node.js, Python, Database Design</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Other Skills </h3>
+                        <p>Drone Pilot, Problem Solving, Creative Thinking </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Praemjith. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/praemjith" class="social-link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/praemjithpr" class="social-link" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/praem_jith" class="social-link" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
